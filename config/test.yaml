@@ -1,0 +1,3 @@
+dbUrl: mongodb://localhost:27017/test
+mmqHomeUrl: http://localhost:8080
+socketUrl: http://localhost:3000

@@ -1,0 +1,5 @@
+dbUrl: mongodb://localhost:27017/dev
+host: https://www.massivemusicquiz.com
+mmqHomeUrl: https://www.massivemusicquiz.com/game/facile
+socketUrl: https://sso.massivemusicquiz.com:4342
+gameId : facile
