@@ -17,6 +17,8 @@ const schema = {
   filePath: String,
   createdAt: Date,
   updatedAt: Date,
-  file: {}
+  audioHashes: [{
+    date: Date,
+    hash: String
+  }]
 };
-
