@@ -6,6 +6,7 @@ function register() {
   const trackSchema = new mongoose.Schema(schema);
 
   trackSchema.index({title: 1, artist: 1});
+  trackSchema.index({'audioHashes.hash': 1});
   mongoose.model('Track', trackSchema);
 }
 
