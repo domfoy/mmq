@@ -1,5 +1,12 @@
 dbUrl: mongodb://localhost:27017/dev
 host: https://www.massivemusicquiz.com
-mmqHomeUrl: https://www.massivemusicquiz.com/game/facile
+routes:
+  login: /api/signins
+  play: /game/facile
+  logout: /logout
 socketUrl: https://sso.massivemusicquiz.com:4342
 gameId : facile
+user:
+  email: gurumatazz@yopmail.com
+  password: aa
+connect: true

@@ -1,9 +1,9 @@
-const initSocket = require('./lib/socket');
-const getUser = require('./lib/user');
+const Session = require('./lib/session');
 
 module.exports = init;
 
 function init() {
-  return getUser()
-    .then(initSocket);
+  const session = new Session();
+
+  return session.connect();
 }

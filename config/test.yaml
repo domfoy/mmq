@@ -1,3 +1,7 @@
 dbUrl: mongodb://localhost:27017/test
-mmqHomeUrl: http://localhost:8080
+host: https://www.massivemusicquiz.com
+routes:
+  login: /api/signins
+  play: /game/facile
+  logout: /logout
 socketUrl: http://localhost:3000
