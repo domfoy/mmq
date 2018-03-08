@@ -1,5 +1,3 @@
-// const config = require('config');
-
 const db = require('../db.js');
 const initApp = require('../app.js');
 
