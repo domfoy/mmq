@@ -9,11 +9,12 @@ const initApp = require('../app.js');
 
 program
   .version('0.1.0')
+  .option('-w, --wait <n>', 'the max waiting duration before connexion to the game', parseInt)
   .option('-d, --duration <n>', 'the duration of connexion to the game', parseInt)
   .parse(process.argv);
 
 
-const MAX_INITIAL_WAIT = 6000;
+const MAX_INITIAL_WAIT = program.wait || 6000;
 const TIMEOUT = program.duration || 60000 * 20;
 
 const initialWait = Math.random() * MAX_INITIAL_WAIT;
